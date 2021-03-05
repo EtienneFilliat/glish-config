@@ -1,0 +1,26 @@
+---
+
+main_user: spiki
+
+main_user_key_type: ed25519
+
+user_directories:
+  - archive
+  - backup
+  - downloads
+  - images
+  - music
+  - videos
+  - work
+
+user_groups:
+  - docker
+  - input
+  - lp
+  - uucp
+
+# TODO: create dotfiles
+
+#user_dotfiles_repo: git@github.com:maximelouet/dotfiles.git
+
+#user_dotfiles_directory: ~/.dotfiles
