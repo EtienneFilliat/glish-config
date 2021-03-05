@@ -15,6 +15,15 @@
       {{ main_user }} ALL=(ALL) ALL
     validate: 'visudo -csf %s'
 
+- name: check exsistance of .ssh folder
+  become_user: "{{ main_user }}"
+  file:
+    path: ~/.ssh
+    state: directory
+    owner: "{{ main_user }}"
+    group: "{{ main_user }}"
+    mode: u+rwx,g-rwx,o-rwx #0700
+
 - name: check SSH key presence
   become_user: "{{ main_user }}"
   stat:
