@@ -2,7 +2,9 @@
 
 - name: install required dependencies
   pacman:
-    name: git
+    name:
+      - git
+      - go
     state: present
     update_cache: yes
 
