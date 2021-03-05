@@ -1,0 +1,21 @@
+---
+
+systemd_journald_settings:
+  - name: MaxRetentionSec
+    value: 1month
+
+systemd_logind_settings:
+  - name: HandlePowerKey
+    value: suspend
+  - name: HandleLidSwitch
+    value: ignore
+  - name: HandleLidSwitchExternalPower
+    value: ignore
+  - name: HandleLidSwitchDocked
+    value: ignore
+
+systemd_timesyncd_settings:
+  - name: NTP
+    value: 0.arch.pool.ntp.org 1.arch.pool.ntp.org 2.arch.pool.ntp.org 3.arch.pool.ntp.org
+  - name: FallbackNTP
+    value: 0.pool.ntp.org 1.pool.ntp.org 0.fr.pool.ntp.org
