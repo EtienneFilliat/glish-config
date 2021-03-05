@@ -1,7 +1,7 @@
 ---
 
 - system_locales:
-	- en_US.UTF-8
+  - en_US.UTF-8
 
 preferred_locale: en_US.UTF-8
 preferred_lang: en_US #en_US.UTF-8
