@@ -2,4 +2,5 @@
 ---
 
 - name: set default keyboard configuration
-  command: localectl set-keymap --no-convert keymap {{ keyboard_layout }}
+  command: localectl --no-convert set-x11-keymap "{{ keyboard_layout }}" "" "{{ keyboard_variant }}" "{{ keyboard_options }}"
+#localectl set-keymap --no-convert keymap {{ keyboard_layout }}
