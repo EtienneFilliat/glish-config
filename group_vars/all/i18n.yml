@@ -1,6 +1,6 @@
 ---
 
-- system_locales:
+system_locales:
   - en_US.UTF-8
 
 preferred_locale: en_US.UTF-8
