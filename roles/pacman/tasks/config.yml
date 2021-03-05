@@ -1,0 +1,15 @@
+---
+
+- name: set misc pacman options
+  lineinfile:
+    path: /etc/pacman.conf
+    regexp: '^#?{{ item }}$'
+    line: "{{ item }}"
+    insertafter: '^# Misc options'
+  loop: "{{ pacman_options }}"
+
+- name: set pacman packages for which to ignore upgrades
+  lineinfile:
+    path: /etc/pacman.conf
+    regexp: '^#?IgnorePkg +=.*$'
+    line: "IgnorePkg   = {{ pacman_ignore_pkg | join(' ') }}"
