@@ -10,9 +10,9 @@
 
 - name: add main user to sudoers
   copy:
-    dest: /etc/sudoers.d/{{ main_user }-user
+    dest: /etc/sudoers.d/{{ main_user }}-user
     content: |
-      {{ main_user }} ALL=(ALL) ALL NOPASSWD: /usr/bin/yay, /usr/bin/pacman
+      {{ main_user }} ALL=(ALL) ALL
     validate: 'visudo -csf %s'
 
 - name: check exsistance of .ssh folder
