@@ -1,0 +1,9 @@
+---
+
+- name: genrate locale
+    locale_gen:
+        name: "{{ item }}"
+    loop: "{{ system_locales }}"
+
+- name: set global locale
+  command: localectl set-locale LANG={{ preferred_locale }} LANGUAGE={{ preferred_lang }}

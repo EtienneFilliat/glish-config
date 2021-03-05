@@ -1,0 +1,3 @@
+---
+
+- import_playbook: i18n.yml

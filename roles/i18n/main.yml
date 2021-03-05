@@ -1,0 +1,5 @@
+---
+
+- import_playbook: locale.yml
+- import_playbook: keyboard.yml
+- import_playbook: timezone.yml

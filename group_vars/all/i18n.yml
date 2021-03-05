@@ -1,0 +1,11 @@
+---
+
+- system_locales:
+	- en_US.UTF-8
+
+preferred_locale: en_US.UTF-8
+preferred_lang: en_US #en_US.UTF-8
+
+system_timezone: Europe/Paris
+
+keyboard_layout: fr

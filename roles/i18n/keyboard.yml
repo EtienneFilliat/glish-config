@@ -1,0 +1,5 @@
+
+---
+
+- name: set default keyboard configuration
+  command: localectl set-keymap --no-convert keymap {{ keyboard_layout }}
