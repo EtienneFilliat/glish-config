@@ -1,0 +1,15 @@
+---
+
+system_packages:
+  - ansible
+  - base
+  - git
+  - linux-firmware  # linux proprietary drivers
+  - linux-lts
+  - linux-lts-headers
+  - nano
+  - xf86-input-libinput
+  - xorg-server
+  - grub
+  - efibootmgr
+  - os-prober
