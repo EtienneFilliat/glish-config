@@ -1,0 +1,12 @@
+---
+
+- name: update pacman cache
+  pacman:
+    update_cache: yes
+
+- name: install packages
+  yay:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ system_packages + additional_packages|default([]) }}"
+  ignore_errors: yes
