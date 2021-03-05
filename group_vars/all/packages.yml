@@ -32,7 +32,7 @@ system_packages:
   - gparted
   - grub
   - htop
-  - informant
+#  - informant  # screwing up updates
   - intel-ucode  # intel processors microcode updates
   - libinput-gestures
   - linux-firmware  # linux proprietary drivers
