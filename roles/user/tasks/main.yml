@@ -8,6 +8,9 @@
     groups: "{{ user_groups }}"
     append: yes
 
+- name: set user passwd
+  command: passwd {{ main_user }}
+
 - name: add main user to sudoers
   copy:
     dest: /etc/sudoers.d/saumon-user
