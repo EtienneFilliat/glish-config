@@ -14,7 +14,7 @@ user_directories:
   - work
 
 user_groups:
-  - docker
+  # - docker
   - input
   - lp
   - uucp
