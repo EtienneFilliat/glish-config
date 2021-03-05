@@ -5,7 +5,6 @@
     update_cache: yes
 
 - name: install packages
-  become_user: "{{ main_user }}"
   yay:
     name: "{{ item }}"
     state: present
