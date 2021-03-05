@@ -3,3 +3,4 @@
 - import_playbook: i18n.yml
 - import_playbook: hostname.yml
 - import_playbook: systemd.yml
+- import_playbook: pacman.yml
