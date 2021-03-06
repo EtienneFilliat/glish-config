@@ -1,0 +1,8 @@
+---
+
+font_packages:
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - ttf-dejavu
+  - ttf-font-awesome-4  # i3bar icons
