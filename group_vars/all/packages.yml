@@ -57,6 +57,7 @@ system_packages:
   - rxvt-unicode
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - sudo
+  - sxhkd
   - tcpdump
   - telegram-desktop
   - traceroute
@@ -75,7 +76,6 @@ system_packages:
   - xclip
   - xf86-input-libinput
   - xorg-server
-  - xorg-server
   - xorg-setxkbmap
   - xorg-xev
   - xorg-xinit
@@ -83,6 +83,8 @@ system_packages:
   - xorg-xprop
   - xorg-xrandr
   - xorg-xrdb
+  - xorg-xset
+  - xorg-xsetroot
   - yamllint
   - zip
   - zsh
@@ -98,7 +100,6 @@ boot_packages:
   - systemd-boot-pacman-hook
 
 network_packages:
-  - dnsmasq  # Local DNS cache
   - networkmanager
   - network-manager-applet
   - networkmanager-openvpn

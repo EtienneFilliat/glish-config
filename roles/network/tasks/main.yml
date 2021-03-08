@@ -1,0 +1,28 @@
+---
+
+- name: install necessary network packages
+  become_user: "{{ main_user }}"
+  yay:
+    update_cache: yes
+    name: "{{ item }}"
+    state: present
+  loop: "{{ network_packages }}"
+
+- name: prevent NetworkManager from overriding resolv.conf
+  copy:
+    src: dns.conf
+    dest: /etc/NetworkManager/conf.d/dns.conf
+  notify: enable and restart NetworkManager
+
+- name: copy custom resolv.conf
+  copy:
+    src: resolv.conf
+    dest: /etc/resolv.conf
+
+- name: template WPA2/PSK wifi networks
+  template:
+    src: wpa.nmconnection
+    dest: /etc/NetworkManager/system-connections/{{ item.name }}.nmconnection
+    mode: '600'
+  loop: "{{ wifi_networks_wpa }}"
+  notify: restart NetworkManager

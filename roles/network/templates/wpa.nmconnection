@@ -1,0 +1,39 @@
+#
+# Saumon WPA/PSK network connection for "{{ item.name }}"
+# This file was generated with Ansible.
+{% if item.comment is defined %}
+# Comment: "{{ item.comment }}"
+{% else %}
+# Comment: (none)
+{% endif %}
+#
+[connection]
+id={{ item.name }}
+uuid={{ item.name | to_uuid }}
+type=wifi
+{% if item.priority is defined %}
+autoconnect-priority={{ item.priority }}
+{% endif %}
+permissions=
+
+[wifi]
+mac-address-blacklist=
+mode=infrastructure
+{% if item.ssid is defined %}
+ssid={{ item.ssid }}
+{% else %}
+ssid={{ item.name }}
+{% endif %}
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk={{ item.psk }}
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto

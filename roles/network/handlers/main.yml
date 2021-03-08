@@ -1,0 +1,8 @@
+---
+
+- name: enable and restart NetworkManager
+  listen: restart NetworkManager
+  systemd:
+    name: NetworkManager
+    state: restarted
+    enabled: yes
