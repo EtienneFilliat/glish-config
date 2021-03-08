@@ -8,3 +8,4 @@
 - import_playbook: aur.yml
 - import_playbook: packages.yml
 - import_playbook: fonts.yml
+- import_playbook: network.yml
