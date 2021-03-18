@@ -35,11 +35,13 @@ system_packages:
   - htop
 #  - informant  # screwing up updates
   - intel-ucode  # intel processors microcode updates
+  - kitty
   - libinput-gestures
   - linux-firmware  # linux proprietary drivers
   - linux-lts
   - linux-lts-headers
   - make
+  - man
   - mediainfo
   - mtools  # gparted fat32 support
   - mtr
@@ -57,6 +59,7 @@ system_packages:
   - python2
   - python-pip
   - rofi
+  - picom
   - rsync
   - rxvt-unicode
   - spotify  # https://download.spotify.com/debian/pubkey.gpg

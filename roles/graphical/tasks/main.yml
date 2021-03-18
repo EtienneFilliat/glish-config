@@ -1,0 +1,13 @@
+---
+
+# - name: copy X11 keyboard configuration
+#   copy:
+#     src: "{{ item }}"
+#     dest: "/etc/X11/xorg.conf.d/{{ item }}"
+#   loop:
+#     - 30-keyboard-ergodox.conf
+
+- name: set keyboard repeat interval in xserverrc
+  copy:
+    src: xserverrc
+    dest: /etc/X11/xinit/xserverrc
