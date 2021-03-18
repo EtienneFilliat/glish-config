@@ -10,3 +10,11 @@
     state: present
   loop: "{{ system_packages + additional_packages|default([]) }}"
   ignore_errors: yes
+
+# sudo usermod -aG docker <Users>
+- name: Add main_user to "docker" group
+  user:
+    name: "{{ main_user }}"
+    groups: docker
+    append: yes
+
