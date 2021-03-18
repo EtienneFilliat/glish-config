@@ -24,6 +24,7 @@ system_packages:
   - dunst #  notification manager
   - efibootmgr
   - exfat-utils
+  - feh  # set the wallpaper
   - gcc
   - git
   - git-open-git  # https://github.com/paulirish/git-open
@@ -42,6 +43,7 @@ system_packages:
   - mediainfo
   - mtools  # gparted fat32 support
   - mtr
+  - mpd #  music player daemon
   - nano
   - neofetch
   - netcat
@@ -49,10 +51,12 @@ system_packages:
   - openssh
   - os-prober
   - pacman-contrib  # checkupdates and paccache
+  - polybar
   - pulseaudio
   - python
   - python2
   - python-pip
+  - rofi
   - rsync
   - rxvt-unicode
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
