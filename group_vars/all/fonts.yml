@@ -5,4 +5,4 @@ font_packages:
   - noto-fonts-cjk
   - noto-fonts-emoji
   - ttf-dejavu
-  - ttf-font-awesome-4  # i3bar icons
+  - ttf-font-awesome  # Polybar icons
