@@ -19,6 +19,6 @@ user_groups:
   - uucp
   - network
 
-user_dotfiles_repo: git@github.com:EtienneFilliat/dotfiles.git
+user_dotfiles_repo: https://github.com/EtienneFilliat/dotfiles.git
 
 user_dotfiles_directory: ~/.dotfiles
