@@ -18,3 +18,17 @@
     groups: docker
     append: yes
 
+- name: enable and restart bluetooth
+  systemd:
+    name: bluetooth
+    state: restarted
+    enabled: yes
+
+- name: Enable bluetooth modules in pulseaudio
+  blockinfile:
+    path: /etc/pulse/system.pa
+    block: |
+      load-module module-bluetooth-policy
+      load-module module-bluetooth-discover
+
+

@@ -5,4 +5,6 @@ font_packages:
   - noto-fonts-cjk
   - noto-fonts-emoji
   - ttf-dejavu
-  - ttf-font-awesome  # Polybar icons
+  - ttf-fantasque-sans-mono
+  - ttf-material-icons-git
+  - otf-ipafont

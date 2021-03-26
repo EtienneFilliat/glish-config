@@ -11,6 +11,10 @@ system_packages:
   - bash-completion
   - bat  # cat with syntax highlighting
   - bspwm  # Messenger client
+  - betterlockscreen
+  - brightnessctl
+  - bluez
+  - bluez-utils
   - caprine
   - cheat-bin
   - chromium
@@ -32,6 +36,8 @@ system_packages:
   - go
   - gparted
   - grub
+  - gvfs
+  - gvfs-smb
   - htop
 #  - informant  # screwing up updates
   - intel-ucode  # intel processors microcode updates
@@ -45,7 +51,6 @@ system_packages:
   - mediainfo
   - mtools  # gparted fat32 support
   - mtr
-  - mpd #  music player daemon
   - nano
   - neofetch
   - netcat
@@ -63,6 +68,8 @@ system_packages:
   - rsync
   - rxvt-unicode
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
+  - spicetify # Juicy rice 
+  - playerctl 
   - sudo
   - sxhkd
   - tcpdump
@@ -78,6 +85,7 @@ system_packages:
   - vlc
   - whois
   - wireless_tools
+  - xdg-user-dirs
   - x11-ssh-askpass  # VSCode SSH authentication
   - xautolock
   - xclip

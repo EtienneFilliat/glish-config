@@ -14,13 +14,11 @@ user_directories:
   - work
 
 user_groups:
-  # - docker
   - input
   - lp
   - uucp
+  - network
 
-# TODO: create dotfiles
+user_dotfiles_repo: git@github.com:EtienneFilliat/dotfiles.git
 
-#user_dotfiles_repo: git@github.com:maximelouet/dotfiles.git
-
-#user_dotfiles_directory: ~/.dotfiles
+user_dotfiles_directory: ~/.dotfiles
