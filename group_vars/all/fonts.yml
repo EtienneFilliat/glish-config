@@ -7,4 +7,4 @@ font_packages:
   - ttf-dejavu
   - ttf-fantasque-sans-mono
   - otf-ipafont
-  - ttf-material-icons-git
+ # - ttf-material-icons-git
