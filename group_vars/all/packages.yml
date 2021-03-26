@@ -68,7 +68,7 @@ system_packages:
   - rsync
   - rxvt-unicode
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
-  - spicetify # Juicy rice 
+  - spicetify-cli # Juicy rice 
   - playerctl 
   - sudo
   - sxhkd

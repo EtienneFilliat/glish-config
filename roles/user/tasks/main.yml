@@ -52,4 +52,4 @@
 
 # Custom config 
 
-# - import_tasks: dotfiles.yml
+- import_tasks: dotfiles.yml
