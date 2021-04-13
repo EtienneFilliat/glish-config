@@ -10,11 +10,9 @@ system_packages:
   - bash
   - bash-completion
   - bat  # cat with syntax highlighting
-  - bspwm  # Messenger client
   - betterlockscreen
   - brightnessctl
-  - bluez
-  - bluez-utils
+  - bspwm  # Messenger client
   - caprine
   - cheat-bin
   - chromium
@@ -39,7 +37,6 @@ system_packages:
   - gvfs
   - gvfs-smb
   - htop
-#  - informant  # screwing up updates
   - intel-ucode  # intel processors microcode updates
   - kitty
   - libinput-gestures
@@ -58,20 +55,23 @@ system_packages:
   - openssh
   - os-prober
   - pacman-contrib  # checkupdates and paccache
+  - picom
+  - playerctl
   - polybar
   - pulseaudio
+  - pulseaudio-bluetooth
   - python
   - python2
   - python-pip
+  - ranger
   - rofi
-  - picom
   - rsync
   - rxvt-unicode
+  - spicetify-cli # Juicy rice
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
-  - spicetify-cli # Juicy rice 
-  - playerctl 
   - sudo
   - sxhkd
+
   - tcpdump
   - telegram-desktop
   - traceroute
@@ -85,10 +85,10 @@ system_packages:
   - vlc
   - whois
   - wireless_tools
-  - xdg-user-dirs
   - x11-ssh-askpass  # VSCode SSH authentication
   - xautolock
   - xclip
+  - xdg-user-dirs
   - xf86-input-libinput
   - xorg-server
   - xorg-setxkbmap
@@ -105,11 +105,10 @@ system_packages:
   - zsh
   - zsh-completions
 
-
 bluetooth_packages:
   - blueman  # bluetooth GUI applet
   - bluez  # system bluetooth implementation
-  - pulseaudio-bluetooth
+  - bluez-utils
 
 boot_packages:
   - systemd-boot-pacman-hook
