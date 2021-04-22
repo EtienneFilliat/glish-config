@@ -45,6 +45,7 @@ system_packages:
   - linux-lts-headers
   - make
   - man
+  - maim
   - mediainfo
   - mtools  # gparted fat32 support
   - mtr
@@ -71,7 +72,6 @@ system_packages:
   - spotify  # https://download.spotify.com/debian/pubkey.gpg
   - sudo
   - sxhkd
-
   - tcpdump
   - telegram-desktop
   - traceroute
@@ -117,4 +117,3 @@ network_packages:
   - networkmanager
   - network-manager-applet
   - networkmanager-openvpn
-  
