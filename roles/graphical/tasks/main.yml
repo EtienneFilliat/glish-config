@@ -1,13 +1,21 @@
 ---
 
-# - name: copy X11 keyboard configuration
-#   copy:
-#     src: "{{ item }}"
-#     dest: "/etc/X11/xorg.conf.d/{{ item }}"
-#   loop:
-#     - 30-keyboard-ergodox.conf
+- name: copy X11 keyboard / touchpad configuration
+  copy:
+    src: "{{ item }}"
+    dest: "/etc/X11/xorg.conf.d/{{ item }}"
+  loop:
+    - 00-keyboard.conf
+    - 30-GMMK-keyboard.conf
+    - 80-touchpad.conf
 
 - name: set keyboard repeat interval in xserverrc
   copy:
     src: xserverrc
     dest: /etc/X11/xinit/xserverrc
+
+# cf: https://wiki.archlinux.org/title/DisplayLink#USB_3.0_DL-6xxx,_DL-5xxx,_DL-41xx,_DL-3xxx_Devices
+- name: install dock DL-6000 X11 config
+  copy:
+    src: 20-evdidevice.conf
+    dest: /usr/share/X11/xorg.conf.d/20-evdidevice.conf
